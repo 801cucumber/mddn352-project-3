@@ -37,10 +37,12 @@ div.wrap {
 .nav-link {
   padding: 5px 0;
   font-family: 'Roboto Condensed', sans-serif;
+  margin: 2px;
 }
 
 .nav-link a {
   color: gray;
   font-weight: 700;
   text-decoration: none;
+  margin: 5px;
 }
