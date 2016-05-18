@@ -64,11 +64,15 @@ $(function() {
   $('.actionBar').click(function() {
     console.log('click');
     if (!animatingActionBar) {
-      $('.actionBar').animate({height: '230px'}, 200);
+      $('.actionBar').animate({height: '235px'}, 200);
       animatingActionBar = true;
     } else {
       $('.actionBar').animate({height: '50px'}, 200);
       animatingActionBar = false;
     }
   });
+
+    $('map').imageMapResize();
+
+    $(window).trigger('resize');
 });
