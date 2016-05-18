@@ -36,10 +36,11 @@ div.wrap {
 
 .nav-link {
   padding: 5px 0;
+  font-family: 'Roboto Condensed', sans-serif;
 }
 
 .nav-link a {
-  color: black;
+  color: gray;
   font-weight: 700;
   text-decoration: none;
 }

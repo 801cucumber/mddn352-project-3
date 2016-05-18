@@ -64,7 +64,7 @@ $(function() {
   $('.actionBar').click(function() {
     console.log('click');
     if (!animatingActionBar) {
-      $('.actionBar').animate({height: '200px'}, 200);
+      $('.actionBar').animate({height: '220px'}, 200);
       animatingActionBar = true;
     } else {
       $('.actionBar').animate({height: '50px'}, 200);
