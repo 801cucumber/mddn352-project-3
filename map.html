@@ -7,12 +7,12 @@
     <meta name="description" content="Description of the page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style/style.css">
-    <link rel="stylesheet" href="style/maps.css">
     <link rel="stylesheet" href="style/ionicons.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css">
     <link href='https://fonts.googleapis.com/css?family=Hind:400,700' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/maps.css">
 
     <script src="js/jquery-2.2.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
@@ -20,7 +20,7 @@
     <script src="js/script.js"></script>
     <script src="js/maps.js"></script>
     <script>
-      $.ajax({
+       $.ajax({
         type: 'get',
         dataType: 'jsonp',
         url: 'https://mddn352-project-2.firebaseio.com/rest/maps.json',
@@ -38,9 +38,16 @@
 
 <body>
 
-    <div class="actionBar dropdown">
-        <h1>Navigation <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h1>
-        <div class="ion-ios-search-strong search"></div>
+    <div class="actionBar">
+      <h1>Navigation <i class="fa fa-chevron-circle-down" aria-hidden="true"></i></h1>
+      <nav id="nav-dropdown">
+        <div class="nav-link"><a href="#">Jeansnoob</a></div>
+        <div class="nav-link"><a href="#">Jeansnoob</a></div>
+        <div class="nav-link"><a href="#">Jeansnoob</a></div>
+        <div class="nav-link"><a href="#">Jeansnoob</a></div>
+        <div class="nav-link"><a href="#">Jeansnoob</a></div>
+      </a>
+      <div class="ion-ios-search-strong search"></div>
     </div>
 
     <div class="content">
@@ -49,10 +56,10 @@
           <div class="parent">
             <div class="panzoom">
               <img id="level1-map" style="max-width: 800px;" orgWidth="1193" orgHeight="1256" usemap="#level1-map">
-              <!--<map name="level1-map" id="level1">
+              <map name="level1-map" id="level1">
               <area shape="rect" name="level1-cafe" coords="233,720,389,770" href="#" alt="cafe" title="Level 1 Cafe"/>
               <area shape="rect" name="level1-store" coords="223,797,397,870" href="#" alt="store" title="Level 1 Store"/>
-            </map>-->
+            </map>
             </div>
           </div>
         </section>

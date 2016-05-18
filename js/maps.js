@@ -41,4 +41,34 @@ $(function() {
     $zoomRange: $section.find(".zoom-range"),
     $reset: $section.find(".reset")
   });
+
+  $('area').on('click touchstart', function() {
+    var name = $(this).attr('name');
+
+    $('#overlay').fadeIn(300);
+    if (name === "level1-store") {
+      $('#level1-popup-store').fadeIn(300);
+    } else if (name === "level1-cafe") {
+      $('#level1-popup-cafe').fadeIn(300);
+      $(window).trigger('resize');
+    }
+  });
+
+  $('#overlay').click(function() {
+    $('.popup').fadeOut(300);
+    $('#overlay').fadeOut(300);
+  });
+
+  // Action Bar
+  var animatingActionBar = false;
+  $('.actionBar').click(function() {
+    console.log('click');
+    if (!animatingActionBar) {
+      $('.actionBar').animate({height: '200px'}, 200);
+      animatingActionBar = true;
+    } else {
+      $('.actionBar').animate({height: '50px'}, 200);
+      animatingActionBar = false;
+    }
+  });
 });

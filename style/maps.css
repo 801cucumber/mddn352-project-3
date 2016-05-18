@@ -4,7 +4,42 @@ body, html {
   overflow: hidden;
 }
 
+.actionBar h1 {
+  position: absolute;
+  left: 50%;
+  line-height: 50px;
+  transform: translateX(-50%);
+}
+
+.actionBar {
+  display: block;
+  overflow: hidden;
+}
+
+.actionBar .search {
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 50px;
+  transform: none;
+}
+
 div.wrap {
   height: 100%;
-  overflow: hidden;
+}
+
+#nav-dropdown {
+  display: block;
+  margin-top: 50px;
+  border-top: 1px solid #dedede;
+}
+
+.nav-link {
+  padding: 5px 0;
+}
+
+.nav-link a {
+  color: black;
+  font-weight: 700;
+  text-decoration: none;
 }
