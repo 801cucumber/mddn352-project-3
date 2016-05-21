@@ -24,6 +24,14 @@ body, html {
   transform: none;
 }
 
+.dropdown-caret {
+  position: absolute;
+  top: 34px;
+  left: 50%;
+  transform: translateX(-50%);
+  color: gray;
+}
+
 div.wrap {
   height: 100%;
 }
