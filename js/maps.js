@@ -72,7 +72,4 @@ $(function() {
     }
   });
 
-    $('map').imageMapResize();
 });
-
-// Dynamic Pages
