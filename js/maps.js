@@ -59,14 +59,21 @@ $(function() {
     $('#overlay').fadeOut(300);
   });
 
+  $('.page-overlay').click(function() {
+    $('.page-overlay').fadeOut(200);
+    $('.actionBar').animate({height: '50px'}, 200);
+    animatingActionBar = false;
+  });
+
   // Action Bar
   var animatingActionBar = false;
   $('.actionBar').click(function() {
-    console.log('click');
     if (!animatingActionBar) {
+      $('.page-overlay').fadeIn(200);
       $('.actionBar').animate({height: '300px'}, 200);
       animatingActionBar = true;
     } else {
+      $('.page-overlay').fadeOut(200);
       $('.actionBar').animate({height: '50px'}, 200);
       animatingActionBar = false;
     }
