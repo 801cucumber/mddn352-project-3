@@ -63,7 +63,7 @@ div.wrap {
 
 .nav-link {
   padding: 10px 0;
-  font-family: 'Roboto Condensed' sans-serif;
+  font-family: 'Roboto Condensed', sans-serif;
   margin: 2px;
   border-bottom: 1px solid #efefef;
 }
