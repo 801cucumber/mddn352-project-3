@@ -54,6 +54,9 @@ $(function() {
     }  else if (name === "level4-espresso") {
       $('#level4-popup-espresso').fadeIn(300);
       $(window).trigger('resize');
+    } else if (name === "passports") {
+      $('#level4-popup-passports').fadeIn(300);
+      $(window).trigger('resize');
     }
   });
 
