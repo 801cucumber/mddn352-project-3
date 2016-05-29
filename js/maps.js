@@ -77,6 +77,6 @@ $(function() {
       $('.actionBar').animate({height: '50px'}, 200);
       animatingActionBar = false;
     }
-  });
 
+  });
 });
