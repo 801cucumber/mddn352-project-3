@@ -20,21 +20,6 @@
     <script src="../js/jquery.panzoom.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/maps.js"></script>
-    <script>
-       $.ajax({
-        type: 'get',
-        dataType: 'jsonp',
-        url: 'https://mddn352-project-2.firebaseio.com/rest/maps.json',
-        success: function(data) {
-          $('#level1-map').attr('src', data.level1);
-          $('#level2-map').attr('src', data.level2);
-          $('#level3-map').attr('src', data.level3);
-          $('#level4-map').attr('src', data.level4);
-          $('#level5-map').attr('src', data.level5);
-          $('#level6-map').attr('src', data.level6);
-        }
-      });
-    </script>
 </head>
 
 <body>
@@ -60,11 +45,11 @@
         <section id="l1-m">
           <div class="parent">
             <div class="panzoom">
-              <img id="level1-map" usemap="#level1-map">
-                <map name="level1-map" id="level1">
-                  <area shape="rect" name="level1-cafe" coords="429,1070,504,1143" href="#level1-cafe" alt="cafe" title="Level 1 Cafe"/>
-                  <area shape="rect" name="level1-store" coords="428,1207,503,1280" href="#level1-store" alt="store" title="Level 1 Store"/>
-                </map>
+              <img src="../images/maps/level_1_map.png" height="917" width="900" usemap="#level1-map">
+              <map name="level1-map" id="level1">
+                <area shape="rect" name="level1-cafe" coords="214,530,264,580" href="#level1-cafe" alt="cafe" title="Level 1 Cafe"/>
+                <area shape="rect" name="level1-store" coords="213,604,263,654" href="#level1-store" alt="store" title="Level 1 Store"/>
+              </map>
             </div>
           </div>
         </section>

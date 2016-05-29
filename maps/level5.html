@@ -20,21 +20,6 @@
     <script src="../js/jquery.panzoom.js"></script>
     <script src="../js/script.js"></script>
     <script src="../js/maps.js"></script>
-    <script>
-       $.ajax({
-        type: 'get',
-        dataType: 'jsonp',
-        url: 'https://mddn352-project-2.firebaseio.com/rest/maps.json',
-        success: function(data) {
-          $('#level1-map').attr('src', data.level1);
-          $('#level2-map').attr('src', data.level2);
-          $('#level3-map').attr('src', data.level3);
-          $('#level4-map').attr('src', data.level4);
-          $('#level5-map').attr('src', data.level5);
-          $('#level6-map').attr('src', data.level6);
-        }
-      });
-    </script>
 </head>
 
 <body>
@@ -52,7 +37,7 @@
       <div class="ion-ios-search-strong search"></div>
     </div>
 
-    <div class="page-overlay"></div>    
+    <div class="page-overlay"></div>
 
     <div class="content">
 
@@ -60,20 +45,11 @@
         <section id="l5-m">
           <div class="parent">
             <div class="panzoom">
-              <img id="level5-map">
+              <img src="../images/maps/level_5_map.png" width="900" height="793">
             </div>
           </div>
         </section>
       </center>
-
-      <div id="overlay"></div>
-      <div id="level1-popup-cafe" class="popup">
-          <center><p>This is a placeholder text.</p></center>
-      </div>
-
-      <div id="level1-popup-store" class="popup">
-        <center><p>This is a placeholder text.</p></center>
-      </div>
 
     </div>
 

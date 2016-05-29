@@ -51,6 +51,9 @@ $(function() {
     } else if (name === "level1-cafe") {
       $('#level1-popup-cafe').fadeIn(300);
       $(window).trigger('resize');
+    }  else if (name === "level4-espresso") {
+      $('#level4-popup-espresso').fadeIn(300);
+      $(window).trigger('resize');
     }
   });
 
