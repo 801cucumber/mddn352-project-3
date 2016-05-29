@@ -3,6 +3,7 @@
 <head>
     <title>Te Papa Map</title>
 
+    <meta charset="utf-8">
     <meta name="keywords" content="Web, Project, Keywords">
     <meta name="description" content="Description of the page">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -19,7 +20,6 @@
     <script src="js/jquery-2.2.0.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.6/js/bootstrap.min.js"></script>
     <script src="js/jquery.panzoom.js"></script>
-    <script src="js/jquery.maphilight.js"></script>
     <script src="js/script.js"></script>
     <script src="js/maps.js"></script>
     <script>
@@ -74,11 +74,21 @@
 
       <div id="overlay"></div>
       <div id="level1-popup-cafe" class="popup">
-          <center><p>This is a placeholder text.</p></center>
+        <div align="right" background-color="transparent"><i class="fa fa-times" aria-hidden="true"></i></div>
+          <center><img src="images/cafe_img.jpg"></center>
+          <h3><b><font color="#78A334">█ Te Papa Cafe</font></b> <span style="font-weight: 400; font-size: 17px;">Ngā kawhē</span></h3>
+          <p align="justify">Our ground-floor cafe offers great breakfasts, brunches, lunches, and fresh snacks.
+          Gluten-free and vegetarian options are available. Drinks include espresso coffee, herbal teas, wine, and beer.</p>
+          <p align="justify">Our kids’ play area will entertain your little ones while you rest your feet. A parents’ room is also available.</p>
+          <p align="right"><a href="https://www.tepapa.govt.nz/sites/default/files/te.papa_.cafe-all-day.menu_.pdf" target="blank">View menu</a> <i class="fa fa-external-link" aria-hidden="true"></i></p>
       </div>
 
       <div id="level1-popup-store" class="popup">
-        <center><p>This is a placeholder text.</p></center>
+        <center><img src="images/store_img.jpg"></center>
+        <p><h3><b><font color="#78A334">█ Te Papa Store</font></b> <span style="font-weight: 400; font-size: 17px;">Ngā toa</span></h3></p>
+        <p align="justify">You’ll find quality gifts and souvenirs unique to New Zealand at our ground-floor store.
+          Choose from New Zealand–made jewellery and crafts, books by our country’s leading authors, works from Aotearoa’s finest artists, and much more.</p>
+        <p align="right"><a href="http://www.tepapastore.co.nz/" target="blank">View online catalogue</a> <i class="fa fa-external-link" aria-hidden="true"></i></p>
       </div>
 
     </div>
