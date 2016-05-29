@@ -63,7 +63,7 @@ div.wrap {
 
 .nav-link {
   padding: 10px 0;
-  font-family: 'Roboto Condensed', sans-serif;
+  font-family: 'Roboto Condensed' sans-serif;
   margin: 2px;
   border-bottom: 1px solid #efefef;
 }
@@ -93,6 +93,10 @@ div.wrap {
   transform: translate(-50%, -50%);
 }
 
+.popup a {
+  color: #78A334;
+}
+
 .popup img {
   max-width: 100%;
 }
@@ -115,6 +119,6 @@ div.wrap {
   border: 1px solid #acacac;
   text-align: center;
   line-height: 20px;
-  transform: translate(50%, -30%);
-  text-shadow: 0 0 3px gray;
+  transform: translate(40%, -30%);
+  text-shadow: 0 0 2px gray;
 }
