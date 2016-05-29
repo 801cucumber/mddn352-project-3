@@ -65,6 +65,11 @@ $(function() {
     $('#overlay').fadeOut(300);
   });
 
+  $('.fa-close').click(function() {
+    $('.popup').fadeOut(300);
+    $('#overlay').fadeOut(300);
+  });
+
   $('.page-overlay').click(function() {
     $('.page-overlay').fadeOut(200);
     $('.actionBar').animate({height: '50px'}, 200);

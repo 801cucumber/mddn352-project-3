@@ -105,3 +105,16 @@ div.wrap {
   height: 100%;
   background: rgba(0, 0, 0, 0.1);
 }
+
+.fa-close {
+  width: 20px;
+  height: 20px;
+  background: white;
+  color: #acacac;
+  border-radius: 50%;
+  border: 1px solid #acacac;
+  text-align: center;
+  line-height: 20px;
+  transform: translate(50%, -30%);
+  text-shadow: 0 0 3px gray;
+}
